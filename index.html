@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+       content="width=device-width, initial-scale=1.0">
+  <title>GitHub API</title>
+  <link rel="stylesheet"
+       href="index.css">
+
+</head>
+
+<body>
+  <h1>Git Hub API</h1>
+  <div>
+    <h3>Enter a GitHub User name</h3>
+    <!-- Start of form  -->
+    <form id="form-selector">
+      <label for="username">Enter the GitHub user name:</label>
+      <input id="username"
+           type="text"
+           placeholder="enter user name" />
+      <input type="submit" />
+    </form>
+    <!-- Display form user name -->
+    <div id="display-username"></div>
+    <br>
+    <div id="display-jsonData"></div>
+    <p id="error-message"></p>
+    <div >
+      <h2 id="avatar-head"></h2>
+      <img id="avatar" />
+      <!-- <p id="information-links"></p>
+      <a id=""href=""></a> -->
+    </div>
+  </div>
+  <!-- JavaScript link her to load after the DOM is loaded in full -->
+  <script src="script.js"></script>
+</body>
+
+</html>
