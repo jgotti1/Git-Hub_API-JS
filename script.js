@@ -9,15 +9,16 @@ const errorMessage = document.getElementById("error-message");
 const informationSection = document.querySelector(".information-link-section");
 const informationSectionGitLink = document.querySelector(".information-link-section a");
 const clear = document.getElementById("clear");
+const title = document.querySelector(".heading");
 
 clear.addEventListener("click", function () {
   location.reload(); // Reload the window
 });
 
-form.addEventListener("submit", async function (event) {
+form.addEventListener("submit", async (event) => {
   event.preventDefault();
   const userName = getUserNameInput.value;
-
+  title.textContent = "Getting your requested GitHub account details";
   displayUsernameText.style.color = "Blue";
   displayUsername.textContent = ` User Name Entered: ${userName}`;
 
