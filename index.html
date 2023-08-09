@@ -23,16 +23,23 @@
            placeholder="enter user name" />
       <input type="submit" />
     </form>
+    <br>
+    <button id="clear">Clear Selections</button>
+    
     <!-- Display form user name -->
-    <div id="display-username"></div>
+    <div id="display-username">
+      <h3 class="username-text">User Name Entered:</h3>
+    </div>
     <br>
     <div id="display-jsonData"></div>
     <p id="error-message"></p>
     <div >
       <h2 id="avatar-head"></h2>
       <img id="avatar" />
-      <!-- <p id="information-links"></p>
-      <a id=""href=""></a> -->
+      <div class="information-link-section">
+        <p >Click a link for more information</p>
+        <a href="" target="_blank">Go to the users GitHub account in a new tab</a>
+      </div>
     </div>
   </div>
   <!-- JavaScript link her to load after the DOM is loaded in full -->

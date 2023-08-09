@@ -2,3 +2,15 @@
   color: red;
   font-size: 36px;
 }
+.information-link-section {
+  display: none;
+}
+
+#clear {
+  margin-bottom: 25px;
+}
+
+.username-text {
+
+display: none;
+}
