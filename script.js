@@ -38,4 +38,5 @@ form.addEventListener("submit", async (event) => {
   informationSectionGitLink.href = `https://github.com/${userName}`;
 
   console.log(returnedData);
+  console.log(userName);
 });
