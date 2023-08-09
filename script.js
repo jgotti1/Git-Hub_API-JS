@@ -2,7 +2,6 @@ const form = document.getElementById("form-selector");
 const getUserNameInput = document.getElementById("username");
 const displayUsername = document.getElementById("display-username"); // Get the display element
 const displayUsernameText = document.querySelector(".username-text"); // Get the display element
-
 const jsonData = document.getElementById("display-jsonData");
 const avatarImage = document.getElementById("avatar");
 const avatarHead = document.getElementById("avatar-head");
@@ -18,10 +17,9 @@ clear.addEventListener("click", function () {
 form.addEventListener("submit", async function (event) {
   event.preventDefault();
   const userName = getUserNameInput.value;
-  
-  displayUsernameText.style.display = "block";
-  displayUsername.textContent = ` ${userName}`;
-  
+
+  displayUsernameText.style.color = "Blue";
+  displayUsername.textContent = ` User Name Entered: ${userName}`;
 
   const response = await fetch(`https://api.github.com/users/${userName}`);
 
